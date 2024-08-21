@@ -1,0 +1,38 @@
+﻿
+@model  Send_Email_MVC_.Models.EmailModel
+
+@{
+    ViewBag.Title = "Send Email";
+}
+
+<h2>Send Email</h2>
+
+@using (Html.BeginForm("SendEmail", "Email", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.To)
+    @Html.TextBoxFor(m => m.To)
+    @Html.ValidationMessageFor(m => m.To)
+
+    <br />
+
+    @Html.LabelFor(m => m.Subject)
+    @Html.TextBoxFor(m => m.Subject)
+    @Html.ValidationMessageFor(m => m.Subject)
+
+    <br />
+
+    @Html.LabelFor(m => m.Body)
+    @Html.TextAreaFor(m => m.Body)
+    @Html.ValidationMessageFor(m => m.Body)
+
+    <br />
+
+    <input type="submit" value="Send Email" />
+}
+
+@if (ViewBag.Message != null)
+{
+    <div>
+        <p>@ViewBag.Message</p>
+    </div>
+}

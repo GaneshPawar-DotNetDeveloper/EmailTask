@@ -26,7 +26,7 @@ namespace Send_Email_MVC_.Controllers
                     SmtpClient client = new SmtpClient("smtp.gmail.com")
                     {
                         Port = 587, // Use 465 for SSL or 587 for TLS
-                        Credentials = new NetworkCredential("itsganeshpawar99@gmail.com", "dgvw fsaz snua elga"),
+                        Credentials = new NetworkCredential("itsganeshpawar99@gmail.com", "pdqi apaz mfyu upms"),
                         EnableSsl = true, // Use SSL/TLS
                     };
 

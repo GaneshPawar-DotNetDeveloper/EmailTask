@@ -38,7 +38,7 @@ namespace Send_Email_MVC_.Controllers
                         IsBodyHtml = false,
                     };
 
-                    mailMessage.To.Add(model.To);
+                    mailMessage.To.Add(model.To); ;
 
                     client.Send(mailMessage);
                     ViewBag.Message = "Email successfully sent!";

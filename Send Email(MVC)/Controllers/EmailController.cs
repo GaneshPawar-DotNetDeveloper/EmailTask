@@ -14,7 +14,7 @@ namespace Send_Email_MVC_.Controllers
         // GET: Email
         public ActionResult Index()
         {
-            return View(); ;
+            return View(); 
         }
         [HttpPost]
         public ActionResult SendEmail(EmailModel model)
